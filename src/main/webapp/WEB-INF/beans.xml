@@ -8,9 +8,8 @@
 
         <import resource="classpath:META-INF/cxf/cxf.xml" />
 
-        <jaxws:endpoint 
-          id="helloWorld" 
-          implementor="au.edu.unsw.soacourse.bpel.HelloWorldImpl" 
-          address="/HelloWorld" />
+				<jaxws:endpoint id="greenslip" implementor="au.edu.unsw.soacourse.greenslip.BPELGreenSlipServiceImpl" address="BPELGreenSlipService"/>
+				<jaxws:endpoint id="pinkslip" implementor="au.edu.unsw.soacourse.pinkslip.BPELPinkSlipServiceImpl" address="BPELPinkSlipService"/>
+		
           
 </beans>
